@@ -60,6 +60,7 @@ p{
     margin-block-start: 0em;
     margin-block-end: 0em;
     text-align: center;
+  
 }
 
 
@@ -208,7 +209,7 @@ main{
 
 .UserData_sectionbutton_description{
     font-size: 1em;
-    padding:5px;
+    padding: 20px;
     width: 300px;
     background-color: #FAC8FF;
     color:#5C5C5C;
