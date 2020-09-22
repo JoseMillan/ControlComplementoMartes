@@ -4,14 +4,227 @@
 
 /* Tipografía */
 @font-face {
-    font-family: "";
-    src: url("") format("woof2"),
-         url("") format("woof");
+    font-family: Roboto;
+    src: url(/font/Roboto-Regular.ttf);
+  }
+  
+
+*{
+    font-family: Roboto;
 }
+
+:root{
+   /* COLORES */
+    --mainColor: #FFFF;
+    --letterColor: black;
+    --secondLetterColor:#8D3B95;
+
+    /* Tamaños Fuente */
+    --headerLetter: 1.3em;
+    --lilaLetterSize: 1em;
+    --bigPriceLetterSize:6.5em;
+
+    /*  */
+}
+
+html{
+    background-color: black;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+/* HACHES Y PÉS */
+
+
+h4{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+}
+
+
+h5{
+    font-size: var(--lilaLetterSize);
+    color:var(--secondLetterColor);   
+}
+
+
+p{
+    display: flex;
+    flex-direction: row;
+    font-size: var(--bigPriceLetterSize);
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    text-align: center;
+}
+
+
+
+/* Y SPANES */
+span{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-size: 30px;
+}
+
 
 /* ******************************** */
 
 /* Colores */
 
+html{
+    width:400px;
+  
+    
+}
+
+main{
+    border-radius: 40px;
+    justify-content:center;
+    align-self: center;
+    background-color: #F7F0F7;
+
+}
+
 /* ******************************** */
+
+
+
+/* SECTIONS (SÉ QUE SON MUCHAS :(  ) */
+
+#UserData{
+    display:flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+
+
+}
+.UserData_headerMob{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    color: var(--letterColor);
+    font-weight: bold;
+    font-size: var( --headerLetter);
+    justify-content: flex-start;
+    padding-left: 15px;
+}
+
+/* Contenido de HeaderMob */
+.UserData_headerMob h3{
+    padding-left: 75px;
+    font-size: 1.5em;
+}
+
+
+/* ICONO DE LA FLECHA */
+.UserData_headerMob_arrowic{
+    height:30px;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+
+
+/* IMAGEN REDONDA */
+.UserData_imagenUser{
+    display:flex;
+    width:100px;
+    height:100px;
+    align-self: center;
+    padding-top: 10px;
+}
+/* NOMBRE Y MAIL */
+.UserData_Name{
+    display: flex;
+    align-self: center;
+    line-height:0px;
+    font-size:1.5em ;
+    margin-bottom: -2px;
+}
+
+.UserData_Mail{
+    position: relative;
+    display: flex;
+    align-self: center;
+    color:grey; 
+    font-weight: 300;
+}
+/* ******************************* */
+
+
+
+/* PRECIO LILA Y SELECTOR  */
+.UserData_prices{
+    background-color: #fff;
+    width:250px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 20px;
+    margin-left: 70px;
+    background-color: #FAF5FB;
+    padding:10px;
+    border-radius: 25px;
+}
+/* SECCION  */
+.UserData_prices_priceSelect{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* IMAGEN DEL ICONO DE LAS FLECHAS */
+.UserData_prices_priceSelect_priceImg{
+    height:40px;
+    padding-top: 18px;
+}
+
+/* SECCION PRECIO GRANDOTE */
+
+.UserData_bigPrice{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+
+/* SECTION BUTTON  */
+.UserData_sectionbutton{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+
+.UserData_sectionbutton_description{
+    font-size: 1em;
+    padding:5px;
+    width: 300px;
+    background-color: #FAC8FF;
+    color:#5C5C5C;
+    text-align: center;
+    border-radius:0px 40px 40px 40px;
+}
+
+.UserData_sectionbutton_btn-submit{
+
+    margin-top:20px;
+    align-self: center;
+    background-color: #1C1C1F;
+    padding:0px;
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    color: white;
+}
 
